@@ -20,3 +20,14 @@ D:\dev edu\resum\cinema\cinema\obj\Debug\netcoreapp3.0\cinema.AssemblyInfoInputs
 D:\dev edu\resum\cinema\cinema\obj\Debug\netcoreapp3.0\cinema.AssemblyInfo.cs
 D:\dev edu\resum\cinema\cinema\obj\Debug\netcoreapp3.0\cinema.dll
 D:\dev edu\resum\cinema\cinema\obj\Debug\netcoreapp3.0\cinema.pdb
+C:\Users\Admin\Desktop\Data-Structure\time_table_of_cinema\cinema\bin\Debug\netcoreapp3.0\cinema.exe
+C:\Users\Admin\Desktop\Data-Structure\time_table_of_cinema\cinema\bin\Debug\netcoreapp3.0\cinema.deps.json
+C:\Users\Admin\Desktop\Data-Structure\time_table_of_cinema\cinema\bin\Debug\netcoreapp3.0\cinema.runtimeconfig.json
+C:\Users\Admin\Desktop\Data-Structure\time_table_of_cinema\cinema\bin\Debug\netcoreapp3.0\cinema.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\Data-Structure\time_table_of_cinema\cinema\bin\Debug\netcoreapp3.0\cinema.dll
+C:\Users\Admin\Desktop\Data-Structure\time_table_of_cinema\cinema\bin\Debug\netcoreapp3.0\cinema.pdb
+C:\Users\Admin\Desktop\Data-Structure\time_table_of_cinema\cinema\obj\Debug\netcoreapp3.0\cinema.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Data-Structure\time_table_of_cinema\cinema\obj\Debug\netcoreapp3.0\cinema.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Data-Structure\time_table_of_cinema\cinema\obj\Debug\netcoreapp3.0\cinema.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Data-Structure\time_table_of_cinema\cinema\obj\Debug\netcoreapp3.0\cinema.dll
+C:\Users\Admin\Desktop\Data-Structure\time_table_of_cinema\cinema\obj\Debug\netcoreapp3.0\cinema.pdb

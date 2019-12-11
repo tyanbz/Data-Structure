@@ -20,3 +20,14 @@ C:\Users\Admin\Desktop\dataStruct\dataStruct\obj\Debug\netcoreapp3.0\dataStruct.
 C:\Users\Admin\Desktop\dataStruct\dataStruct\obj\Debug\netcoreapp3.0\dataStruct.AssemblyInfo.cs
 C:\Users\Admin\Desktop\dataStruct\dataStruct\obj\Debug\netcoreapp3.0\dataStruct.dll
 C:\Users\Admin\Desktop\dataStruct\dataStruct\obj\Debug\netcoreapp3.0\dataStruct.pdb
+C:\Users\Admin\Desktop\Data-Structure\dataStruct\dataStruct\obj\Debug\netcoreapp3.0\dataStruct.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Data-Structure\dataStruct\dataStruct\obj\Debug\netcoreapp3.0\dataStruct.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Data-Structure\dataStruct\dataStruct\obj\Debug\netcoreapp3.0\dataStruct.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Data-Structure\dataStruct\dataStruct\obj\Debug\netcoreapp3.0\dataStruct.dll
+C:\Users\Admin\Desktop\Data-Structure\dataStruct\dataStruct\obj\Debug\netcoreapp3.0\dataStruct.pdb
+C:\Users\Admin\Desktop\Data-Structure\dataStruct\dataStruct\bin\Debug\netcoreapp3.0\dataStruct.exe
+C:\Users\Admin\Desktop\Data-Structure\dataStruct\dataStruct\bin\Debug\netcoreapp3.0\dataStruct.deps.json
+C:\Users\Admin\Desktop\Data-Structure\dataStruct\dataStruct\bin\Debug\netcoreapp3.0\dataStruct.runtimeconfig.json
+C:\Users\Admin\Desktop\Data-Structure\dataStruct\dataStruct\bin\Debug\netcoreapp3.0\dataStruct.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\Data-Structure\dataStruct\dataStruct\bin\Debug\netcoreapp3.0\dataStruct.dll
+C:\Users\Admin\Desktop\Data-Structure\dataStruct\dataStruct\bin\Debug\netcoreapp3.0\dataStruct.pdb

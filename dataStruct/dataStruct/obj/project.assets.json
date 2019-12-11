@@ -8,20 +8,25 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev edu\\resum\\data_structure\\dataStruct\\dataStruct\\dataStruct.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Data-Structure\\dataStruct\\dataStruct\\dataStruct.csproj",
       "projectName": "dataStruct",
-      "projectPath": "D:\\dev edu\\resum\\data_structure\\dataStruct\\dataStruct\\dataStruct.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\dev edu\\resum\\data_structure\\dataStruct\\dataStruct\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Data-Structure\\dataStruct\\dataStruct\\dataStruct.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Data-Structure\\dataStruct\\dataStruct\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"

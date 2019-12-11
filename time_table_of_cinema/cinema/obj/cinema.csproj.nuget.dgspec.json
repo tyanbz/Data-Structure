@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev edu\\resum\\cinema\\cinema\\cinema.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\Data-Structure\\time_table_of_cinema\\cinema\\cinema.csproj": {}
   },
   "projects": {
-    "D:\\dev edu\\resum\\cinema\\cinema\\cinema.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Data-Structure\\time_table_of_cinema\\cinema\\cinema.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev edu\\resum\\cinema\\cinema\\cinema.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Data-Structure\\time_table_of_cinema\\cinema\\cinema.csproj",
         "projectName": "cinema",
-        "projectPath": "D:\\dev edu\\resum\\cinema\\cinema\\cinema.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Data-Structure\\time_table_of_cinema\\cinema\\cinema.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\dev edu\\resum\\cinema\\cinema\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Data-Structure\\time_table_of_cinema\\cinema\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
