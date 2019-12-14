@@ -69,9 +69,17 @@ namespace dataStruct
             throw new NotImplementedException();
         }
 
-        public void MinItem()
+        public void MinItem(int[] arr)
         {
-            throw new NotImplementedException();
+            int min = arr[0];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] < min)
+                {
+                    min = arr[i];
+                }
+            }
+            Console.WriteLine("Минимальный элемент массива: " + min);
         }
 
         public void Shake()

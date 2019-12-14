@@ -17,7 +17,7 @@ namespace dataStruct
         public void MaxIndx(); //максимальный индекс
         public void MinIndx();
         public void MaxItem();
-        public void MinItem();
+        public void MinItem(int[] arr);
         public void SumItems();
         public void ChangePlaces(); //поменять местами эелементы по заданным индексам
     }
