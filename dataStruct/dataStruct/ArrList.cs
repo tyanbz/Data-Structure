@@ -19,14 +19,45 @@ namespace dataStruct
             }
             return arr;
         } // completed
-        public void AddAppend(int[] arr)
+        public int[] AddAppend(int[] arr)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Введи элемент для добавления:");
+            int value = Convert.ToInt32(Console.ReadLine());
+            int[] tmpArr = new int[arr.Length + 1];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                tmpArr[i] = arr[i];
+            }
+            tmpArr[arr.Length] = value;
+            Console.WriteLine("В конец массива добавлен элемент: " + value);
+            return tmpArr;
         }
 
-        public void AddIndxItem(int[] arr)
+        public int[] AddIndxItem(int[] arr)
         {
-            throw new NotImplementedException();
+            int[] tmpArr = new int[arr.Length + 1];
+            Console.WriteLine("Введи элемент для добавления:");
+            int value = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введи индекс для добавления:");
+            int indx = Convert.ToInt32(Console.ReadLine());
+            if (indx <= arr.Length)
+            {
+                for (int i = 0; i < indx; i++)
+                {
+                    tmpArr[i] = arr[i];
+                }
+                tmpArr[indx] = value;
+                for (int j = indx + 1; j < tmpArr.Length; j++)
+                {
+                    tmpArr[j] = arr[j - 1];
+                }
+                Console.WriteLine("\nЭлемент с индексом " + indx + " добавлен!");
+            }
+            else
+            {
+                Console.WriteLine("В массиве не существует такого индекса.");
+            }
+            return tmpArr;
         }
 
         public void ChangeHalfs(int[] arr)

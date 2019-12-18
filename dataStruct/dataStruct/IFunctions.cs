@@ -8,8 +8,8 @@ namespace dataStruct
     {
         public void ChooseSort(int[] arr);
         public void Show(int[] arr);
-        public void AddIndxItem(int[] arr);
-        public void AddAppend(int[] arr);
+        public int[] AddIndxItem(int[] arr);
+        public int[] AddAppend(int[] arr);
         public int[] DelItem(int[] arr);
         public void ChangeHalfs(int[] arr); //поменять половины массива местами
         public int[] Concut(int[] arr); //склейка массивов и списков

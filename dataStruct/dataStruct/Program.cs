@@ -118,10 +118,10 @@ namespace dataStruct
                                     array.SumItems(arr);
                                     break;
                                 case 9:
-                                    array.AddIndxItem(arr);
+                                    arr = array.AddIndxItem(arr);
                                     break;
                                 case 89:
-                                    array.AddAppend(arr);
+                                    arr = array.AddAppend(arr);
                                     break;
                                 case 99:
                                     arr = array.DelItem(arr);
