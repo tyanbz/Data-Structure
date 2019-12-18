@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace dataStruct
@@ -9,7 +10,8 @@ namespace dataStruct
         public ArrList()
         {
         }
-        public int[] CreateArr(int length)
+        MainArray mArr = new MainArray();
+        public void CreateArr(int length)
         {
             int[] arr = new int[length];
             Random rd = new Random();
@@ -17,10 +19,11 @@ namespace dataStruct
             {
                 arr[i] = rd.Next(1, 10);
             }
-            return arr;
+            mArr.UpDate(arr);
         } // completed
-        public int[] AddAppend(int[] arr)
+        public void AddAppend()
         {
+            int[] arr = mArr.GetArr();
             Console.WriteLine("Введи элемент для добавления:");
             int value = Convert.ToInt32(Console.ReadLine());
             int[] tmpArr = new int[arr.Length + 1];
@@ -30,11 +33,12 @@ namespace dataStruct
             }
             tmpArr[arr.Length] = value;
             Console.WriteLine("В конец массива добавлен элемент: " + value);
-            return tmpArr;
-        }
+            mArr.UpDate(tmpArr);
+        } // completed
 
-        public int[] AddIndxItem(int[] arr)
+        public void AddIndxItem()
         {
+            int[] arr = mArr.GetArr();
             int[] tmpArr = new int[arr.Length + 1];
             Console.WriteLine("Введи элемент для добавления:");
             int value = Convert.ToInt32(Console.ReadLine());
@@ -57,32 +61,57 @@ namespace dataStruct
             {
                 Console.WriteLine("В массиве не существует такого индекса.");
             }
-            return tmpArr;
-        }
+            mArr.UpDate(tmpArr);
+        } // completed
 
-        public void ChangeHalfs(int[] arr)
+        public void ChangeHalfs()
+        {
+            int[] arr = mArr.GetArr();
+            //поменять местами половины массива
+            int[] tmpArr = new int[arr.Length];
+            int indx;
+            if (arr.Length%2 == 0)
+            {
+                indx = arr.Length / 2;
+                for (int i = 0; i < arr.Length / 2; i++)
+                {
+                    tmpArr[i] = arr[indx];
+                    indx += 1;
+                }
+                indx = 0;
+                for (int j = arr.Length / 2; j < tmpArr.Length; j++)
+                {
+                    tmpArr[j] = arr[indx];
+                    indx += 1;
+                }
+                mArr.UpDate(tmpArr);
+                Console.WriteLine("Массив перевернут.");
+            }
+            else
+            {
+                Console.WriteLine("Добавь сначала еще 1 элемент в массив.");
+            }
+        } // completed
+
+        public void ChangePlaces()
+        {
+            
+        } 
+
+        public void ChooseSort()
         {
             throw new NotImplementedException();
         }
 
-        public void ChangePlaces(int[] arr)
+        public void Concut()
         {
-            throw new NotImplementedException();
-        }
-
-        public void ChooseSort(int[] arr)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int[] Concut(int[] arr)
-        {
+            int[] arr = mArr.GetArr();
             Random rnd = new Random();
             Console.Write("Введите длинну 2-го массива: ");
             int e = Convert.ToInt32(Console.ReadLine());
             int[] addArr = new int[e];
             int[] fullArr = new int[addArr.Length + arr.Length];
-            int startIndx = 0, index = 0;
+            int startIndx = 0;//, index = 0;
 
             Console.WriteLine("Второй массив:");
             // заполняем второй массив
@@ -98,17 +127,21 @@ namespace dataStruct
                 startIndx = i;
             }
             // помещаем второй массив
-            for (int j = startIndx + 1; j < arr.Length; j++)
+            int count = 0;
+            for (int j = startIndx + 1; j < fullArr.Length; j++)
             {
-                fullArr[j] = arr[j];
+                fullArr[j] = addArr[count];
+                count++;
             }
             Console.WriteLine("\nМассивы склеены!");
-            return fullArr;
-            
+            mArr.UpDate(fullArr);
+
         } // создать массив сингл тоном
 
-        public int[] DelItem(int[] arr)
+        public void DelItem()
         {
+            Console.WriteLine("Введи индекс:");
+            int[] arr = mArr.GetArr();
             int indx = Convert.ToInt32(Console.ReadLine());
             int[] tmpArr = new int[arr.Length];
             int j = 0;
@@ -124,25 +157,21 @@ namespace dataStruct
             }
             arr = tmpArr;
             Console.WriteLine("Элемент с индексом " + indx + " удален.");
-            return arr;
+            mArr.UpDate(arr);
         } // completed
 
-        public void MaxIndx(int[] arr)
+        public void MaxIndx()
         {
-            int max = arr[0];
-            int indx=0;
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] > max)
-                {
-                    indx = i;
-                }
-            }
-            Console.WriteLine("Индекс максимального элемента массива: " + indx);
+            int[] arr = mArr.GetArr();
+            int maxV = arr.Max();
+            int indxMax = Array.IndexOf(arr, maxV);
+            
+            Console.WriteLine("Индекс максимального элемента массива: " + indxMax);
         } // completed
 
-        public void MaxItem(int[] arr)
+        public void MaxItem()
         {
+            int[] arr = mArr.GetArr();
             int max = arr[0];
             for (int i = 0; i < arr.Length; i++)
             {
@@ -154,22 +183,17 @@ namespace dataStruct
             Console.WriteLine("Максимальный элемент массива: " + max);
         } // completed
 
-        public void MinIndx(int[] arr)
+        public void MinIndx()
         {
-            int min = arr[0];
-            int indx=0;
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] < min)
-                {
-                    indx = i;
-                }
-            }
-            Console.WriteLine("Индекс минимального элемента массива: " + indx);
+            int[] arr = mArr.GetArr();
+            int minV = arr.Min();
+            int indxMin = Array.IndexOf(arr, minV);
+            Console.WriteLine("Индекс минимального элемента массива: " + indxMin);
         } // completed
 
-        public void MinItem(int[] arr)
+        public void MinItem()
         {
+            int[] arr = mArr.GetArr();
             int min = arr[0];
             for (int i = 0; i < arr.Length; i++)
             {
@@ -181,8 +205,9 @@ namespace dataStruct
             Console.WriteLine("Минимальный элемент массива: " + min);
         } // completed
 
-        public void Shake(int[] arr)
+        public void Shake()
         {
+            int[] arr = mArr.GetArr();
             Random rd = new Random();
             int randIndx, tmp, a = 0;
             while (a <= 29)
@@ -199,11 +224,13 @@ namespace dataStruct
                 }
                 a++;
             }
+            mArr.UpDate(arr);
             Console.WriteLine("Массив перемешан!");
         } // completed
 
-        public void Show(int[] arr)
+        public void Show()
         {
+            int[] arr = mArr.GetArr();
             Console.WriteLine("М а с с и в : ");
             for (int i = 0; i < arr.Length; i++)
             {
@@ -212,8 +239,9 @@ namespace dataStruct
             Console.WriteLine("\n");
         } // completed
 
-        public void SumItems(int[] arr)
+        public void SumItems()
         {
+            int[] arr = mArr.GetArr();
             int sum = 0;
             for (int i = 0; i < arr.Length; i++)
             {
@@ -221,37 +249,78 @@ namespace dataStruct
             }
             Console.WriteLine("Сумма всех элементов = " + sum);
         } // completed
-        public void BubbleSort(int[] arr)
+        public void BubbleSort()
+        {
+            int[] arr = mArr.GetArr();
+            int tmp = 0;
+            for (int i = arr.Length - 1; i > 0; i--)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    if (arr[j] > arr[j + 1])
+                    {
+                        tmp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = tmp;
+                    }
+                }
+            }
+            mArr.UpDate(arr);
+            Console.WriteLine("Выполнена пузырьковая сортировка.");
+        } // completed
+        public void InsertSort()
         {
 
         }
-        public void InsertSort(int[] arr)
+        public void SelectSort()
+        {
+            int[] arr = mArr.GetArr();
+            int tmp;
+            for (int i=0; i<arr.Length-1; i++)
+            {
+                int minI = i;
+                for (int j=i+1; j<arr.Length; j++)
+                {
+                    if (arr[j] < arr[minI])
+                    {
+                        minI = j;
+                    }
+                }
+                tmp = arr[i];
+                arr[i] = arr[minI];
+                arr[minI] = tmp;
+            }
+            mArr.UpDate(arr);
+            Console.WriteLine("Выполненая сортировка выбором.");
+        } // completed
+        public void ShellSort()
         {
 
         }
-        public void SelectSort(int[] arr)
+        public void MergeSort()
         {
 
         }
-        public void ShellSort(int[] arr)
+        public void HeapSort()
         {
 
         }
-        public void MergeSort(int[] arr)
+        public void QuickSort()
         {
 
         }
-        public void HeapSort(int[] arr)
+        public void Reverse()
         {
+            int[] arr = mArr.GetArr();
+            int[] tmpArr = new int[arr.Length];
+            for (int j = 0, i = arr.Length - 1; i >= 0; i--)
+            {
+                tmpArr[j] = arr[i];
+                j++;
+            }
 
-        }
-        public void QuickSort(int[] arr)
-        {
-
-        }
-        public void Reverse(int[] arr)
-        {
-
-        }
+            Console.WriteLine("Массив перевернут.");
+            mArr.UpDate(tmpArr);
+        } // completed
     }
 }

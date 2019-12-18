@@ -56,10 +56,10 @@ namespace dataStruct
                 "[55] - Сортировка выбором\n" +
                 "[66] - Сортировка вставками\n" +
                 "[88] - Shell сортировка\n" +
-                "[99] - Merge сортировка\n" +
-                "[12] - Heap сортировка\n" +
-                "[13] - Быстрая сортировка\n" +
-                "[14] - Реверсия массива\n" +
+                "[12] - Merge сортировка\n" +
+                "[13] - Heap сортировка\n" +
+                "[14] - Быстрая сортировка\n" +
+                "[15] - Реверсия массива\n" +
                 "------------------------------\n" +
                 "[0] - Назад в главное меню\n";
             string listMenu = "МЕНЮ С ОДНОМЕРНЫМИ ЛИСТАМИ\n" +
@@ -73,6 +73,7 @@ namespace dataStruct
             int[] arr = new int[10];
             int userSelect = 111;
             ArrList array = new ArrList();
+            //MainArray mArr = new MainArray();
 
             while (userSelect != 0)
             {
@@ -93,74 +94,74 @@ namespace dataStruct
                                 case 1:
                                     Console.WriteLine("Введите размер массива: ");
                                     int length = Convert.ToInt32(Console.ReadLine());
-                                    arr = array.CreateArr(length);
+                                    array.CreateArr(length);
                                     Console.WriteLine("Массив создан!");
                                     break;
                                 case 2:
-                                    array.Show(arr);
+                                    array.Show();
                                     break;
                                 case 3:
-                                    array.MinItem(arr);
+                                    array.MinItem();
                                     break;
                                 case 4:
-                                    array.MinIndx(arr);
+                                    array.MinIndx();
                                     break;
                                 case 5:
-                                    array.MaxItem(arr);
+                                    array.MaxItem();
                                     break;
                                 case 6:
-                                    array.MaxIndx(arr);
+                                    array.MaxIndx();
                                     break;
                                 case 7:
-                                    array.ChangePlaces(arr);
+                                    array.ChangePlaces();
                                     break;
                                 case 8:
-                                    array.SumItems(arr);
+                                    array.SumItems();
                                     break;
                                 case 9:
-                                    arr = array.AddIndxItem(arr);
+                                    array.AddIndxItem();
                                     break;
                                 case 89:
-                                    arr = array.AddAppend(arr);
+                                    array.AddAppend();
                                     break;
                                 case 99:
-                                    arr = array.DelItem(arr);
+                                    array.DelItem();
                                     break;
                                 case 11:
-                                    array.ChangeHalfs(arr);
+                                    array.ChangeHalfs();
                                     break;
                                 case 22:
-                                    array.Shake(arr);
+                                    array.Shake();
                                     break;
                                 case 33:
-                                    arr = array.Concut(arr);
+                                    array.Concut();
                                     break;
                                 case 44:
-                                    array.BubbleSort(arr);
+                                    array.BubbleSort();
                                     break;
                                 case 55:
-                                    array.SelectSort(arr);
+                                    array.SelectSort();
                                     break;
                                 case 66:
-                                    array.InsertSort(arr);
+                                    array.InsertSort();
                                     break;
                                 //case 77:
                                  //   array.ShellSort(arr);
                                 //    break;
                                 case 88:
-                                    array.ShellSort(arr);
+                                    array.ShellSort();
                                     break;
                                 case 12:
-                                    array.MergeSort(arr);
+                                    array.MergeSort();
                                     break;
                                 case 13:
-                                    array.HeapSort(arr);
+                                    array.HeapSort();
                                     break;
                                 case 14:
-                                    array.QuickSort(arr);
+                                    array.QuickSort();
                                     break;
                                 case 15:
-                                    array.Reverse(arr);
+                                    array.Reverse();
                                     break;
                                 case 0:
                                     userSelect = 0;
