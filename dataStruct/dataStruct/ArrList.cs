@@ -95,13 +95,20 @@ namespace dataStruct
 
         public void ChangePlaces()
         {
-            
-        } 
-
-        public void ChooseSort()
-        {
-            throw new NotImplementedException();
-        }
+            int[] arr = mArr.GetArr();
+            int[] chArr = new int[arr.Length];
+            Console.WriteLine("Введите индекс первого элемента:");
+            int indxFrom = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите индекс второго элемента:");
+            int indxTo = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (i == indxFrom) chArr[indxTo] = arr[i];
+                else if (i == indxTo) chArr[indxFrom] = arr[i];
+                else chArr[i] = arr[i];
+            }
+            mArr.UpDate(chArr);
+        }  // completed
 
         public void Concut()
         {
@@ -270,7 +277,22 @@ namespace dataStruct
         } // completed
         public void InsertSort()
         {
-
+            int[] array = mArr.GetArr();
+            for (var i = 1; i < array.Length; i++)
+            {
+                var key = array[i];
+                var j = i;
+                while ((j > 1) && (array[j - 1] > key))
+                {
+                    var temp = array[j - 1];
+                    array[j - 1] = array[j];
+                    array[j] = temp;
+                    j--;
+                }
+                array[j] = key;
+            }
+            Console.WriteLine("Выполнена сортировка вставками.");
+            mArr.UpDate(array);
         }
         public void SelectSort()
         {

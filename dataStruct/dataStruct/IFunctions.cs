@@ -6,7 +6,6 @@ namespace dataStruct
 {
     interface IFunctions
     {
-        public void ChooseSort();
         public void Show();
         public void AddIndxItem();
         public void AddAppend();
