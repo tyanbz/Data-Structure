@@ -317,10 +317,11 @@ namespace dataStruct
         } // completed
         public void ShellSort()
         {
-
+            int[] arr = mArr.GetArr();
         }
-        public void MergeSort()
+        public void MergeSort() // сортировка слиянием
         {
+
 
         }
         public void HeapSort()

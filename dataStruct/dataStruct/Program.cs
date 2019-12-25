@@ -24,7 +24,7 @@ namespace dataStruct
 {
     class Program
     {
-        static void Main(string[] args)
+        static void  Main(string[] args)
         {
             string mainMenu ="ГЛАВНОЕ МЕНЮ\n" +
                 "[1] - Зайти в меню с массивами\n" +
