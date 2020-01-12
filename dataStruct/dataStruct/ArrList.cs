@@ -126,6 +126,7 @@ namespace dataStruct
             {
                 addArr[i] = rnd.Next(1, 15);
                 Console.Write(addArr[i] + " ");
+                Console.Write("It's OK");
             }
             // помещаем первый массив
             for (int i = 0; i < arr.Length; i++)
